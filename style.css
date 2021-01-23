@@ -1,0 +1,138 @@
+.body {
+  background-image: url(./pics/fon.png);
+}
+
+#menu {
+  margin-left: 150px;
+}
+
+.title {
+  color: #fff;
+  font-size: 57px;
+  height: 67px;
+  margin-bottom: 8px;
+}
+
+.text {
+  color: #fff;
+  font-size: 50px;
+  height: 60px;
+  margin-left: 24px;
+}
+
+.descripton {
+  color: #fff;
+  font-size: 20px;
+  height: 23px;
+  margin-bottom: 60px;
+}
+
+#startButton {
+  color: #fff;
+  display: flex;
+  font-size: 32px; 
+  justify-content: center; 
+  align-items: center;
+  height: 95px;
+  width: 352px;
+  background-color: #d62b2e;
+  border: solid #d62b2e 1px;
+  border-radius: 3%;
+  cursor: pointer;
+}
+
+.levels {
+  display: flex;
+  width: 275px;
+  height: 227px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 112px;
+}
+
+#easy, #middle, #hard {
+  display: flex;
+  height: 60px;
+  cursor: pointer;
+}
+
+#rhombusEasy, #rhombusMiddle, #rhombusHard {
+  width: 18px;
+  height: 18px;
+  background: #D62B2E;
+  transform: rotate(45deg);
+  margin: 20px 0 15px 5px ;
+   opacity: .1;
+}
+
+.cardA {
+  position: absolute;
+  Width: 218px;
+  Height: 341px;
+  margin-top: -10%;
+  margin-left: 48%;
+  transform: rotate(12deg);
+}
+
+.cardB {
+  position: absolute;
+  width: 218px;
+  height: 341px;
+  margin-left: 60%;
+  margin-top: -10%;
+  transform: rotate(39deg);
+}
+
+.card {
+  max-width: 218px;
+  max-height: 341px;
+  padding-right: 24px;
+}
+
+#game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  margin-top: 48px;
+  position: absolute;
+}
+
+.rowOfCards {
+  position: absolute;
+  display: flex;
+  max-width: 705px;
+  max-height: 341px ;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  flex-direction: row;
+}
+
+#rowOne, #rowTwo, #rowThree {
+  display: none;
+  position: absolute;
+}
+
+.cardFace {
+  position: absolute;
+  background-image: url(./pics/gameOver.png) ;
+  width: 218px;
+  height: 341px; 
+  text-align: center; 
+  backface-visibility: hidden;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.shirt {
+  position: absolute;
+  width: 218px;
+  height: 341px; 
+  backface-visibility: hidden;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+#c1, #c2, #c3, #c4, #c5, #c6, #c7, #c8, #c9 {
+  position: relative;
+}
