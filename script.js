@@ -23,7 +23,7 @@ startButton.addEventListener('click', selectedLevel);
 
 document.querySelectorAll(".card").forEach(card => { 
 	card.addEventListener('click', () => {
-  if (flips) {
+  if (flips == true) {
     window.location.reload();
     flips = false;
   } else {
