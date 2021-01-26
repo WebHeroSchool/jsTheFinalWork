@@ -122,7 +122,7 @@ input[type=radio] + label:hover {
   grid-template-rows: 341px;
   grid-gap: 24px;  
   position: relative;
-  margin: auto;
+  margin:  130px auto 0 auto;
 }
 
 #middleGame {
@@ -131,7 +131,7 @@ input[type=radio] + label:hover {
   grid-template-rows: 341px 341px;
   grid-gap: 24px;  
   position: relative;
-  margin: auto;
+  margin: 30px auto 0 auto;
 }
 
 #hardGame {
@@ -142,12 +142,11 @@ input[type=radio] + label:hover {
   max-height: 706px;
   grid-gap: 24px;  
   position: relative;
-  margin: auto;
+  margin: 30px auto 0 auto;
 }
 
 .cardFace {
   position: absolute;
-  background-image: url(./pics/gameOver.png) ;
   width: 218px;
   height: 341px; 
   text-align: center; 

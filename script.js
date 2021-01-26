@@ -10,6 +10,9 @@ const easyGameField = document.getElementById('easyGame');
 const middleGameField = document.getElementById('middleGame');
 const hardGameField = document.getElementById('hardGame');
 
+let flips = false;
+
+
 function selectedLevel() {
   if (easy.checked) easyGame();  
   if (middle.checked) middleGame();
@@ -18,16 +21,17 @@ function selectedLevel() {
 
 startButton.addEventListener('click', selectedLevel);
 
-
-const cards = document.querySelectorAll(".card");
-const faces = document.querySelectorAll(".cardFace");
-
- function returnCard() {
-  this.classList.toggle("flip");
-}
-cards.forEach((card) => card.addEventListener("click", returnCard));
-
-faces.forEach((face) => face.addEventListener("click", event => window.location.reload()));
+document.querySelectorAll(".card").forEach(card => { 
+	card.addEventListener('click', () => {
+  if (flips) {
+    window.location.reload();
+    flips = false;
+  } else {
+    card.classList.toggle("flip");
+    flips = true;
+	}
+ });
+});
 
 function easyGame() {
   menu.style.display = 'none';
